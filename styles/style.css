@@ -373,10 +373,13 @@ footer {
     }
     
     #theme-toggle {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin: 1rem auto;
-        display: block;
+        display: none; /* Hide theme toggle on mobile */
+    }
+}
+
+/* iPad specific adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #theme-toggle {
+        display: none; /* Hide theme toggle on iPads */
     }
 }
