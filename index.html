@@ -1,46 +1,139 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>SharukMsd</title>
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-dark bg-transparent justify-content-between">
-            <a class="navbar-brand text-light" id="site-title">sharukmsd</a>
-            <form class="form-inline">
-              <input class="form-control mr-sm-2 bg-transparent text-light" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0 bg-transparent" type="submit">Search</button>
-            </form>
-          </nav>
-        <div id="mainDiv" class="">
-            <div id="" class="row justify-content-around">
-                <div id="" class="menu-itm col-md-3 border-light text-light">
-                    <img src="media/books.png" alt="Books" class="img-fluid">
-                </div>
-                <div id="" class="menu-itm col-md-3 border-light text-light">
-                    <img src="media/quote.png" alt="Quotes" class="img-fluid">
-                </div>
-                <div id="" class="menu-itm col-md-3 border-light text-light">
-                    <img src="media/youtube.png" alt="Videos" class="img-fluid">
-                </div>
-                <div id="" class="menu-itm col-md-3 border-light text-light">
-                    <img src="media/headphones.png" alt="Audios" class="img-fluid">
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Shahrukh | iOS Developer</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle">Toggle Theme</button>
+        
+        <header>
+            <h1>MUHAMMAD SHAHRUKH</h1>
+            <p class="subtitle">Software Engineer - iOS - Swift</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="about">
+                <h2>&lt;about&gt;</h2>
+                <p>Software Engineer specializing in iOS development with Swift, focused on creating clean, efficient mobile applications. Proficient in UIKit, SwiftUI, and modern iOS architecture patterns. Also experienced with Flutter for cross-platform projects, delivering successful apps to both the App Store and Google Play.</p>
+            </section>
             
-                <div id="" class="menu-itm col-md-3 border-light text-light">
-                    <img src="media/development.png" alt="Projects" class="img-fluid">
+            <section id="skills">
+                <h2>&lt;skills&gt;</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Swift</div>
+                    <div class="skill-item">Objective-C</div>
+                    <div class="skill-item">UIKit</div>
+                    <div class="skill-item">SwiftUI</div>
+                    <div class="skill-item">watchOS</div>
+                    <div class="skill-item">macOS</div>
+                    <div class="skill-item">iPadOS</div>
+                    <div class="skill-item">Flutter</div>
+                    <div class="skill-item">Core Data</div>
+                    <div class="skill-item">REST APIs</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">CI/CD</div>
                 </div>
-                <div id="" class="menu-itm col-md-3 border-light text-light">
-                    <img src="media/notepad.png" alt="Notes" class="img-fluid">
+            </section>
+            
+            <section id="projects">
+                <h2>&lt;projects&gt;</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>Beings</h3>
+                        <p>iOS application</p>
+                        <p class="project-skills">SwiftUI • Swift</p>
+                        <a href="https://apps.apple.com/gb/app/beings/id6587553049?uo=2" class="project-link">View</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>AI Smart Chatbot</h3>
+                        <p>iOS application</p>
+                        <p class="project-skills">UIKit • Storyboards • Swift</p>
+                        <a href="https://apps.apple.com/pk/app/ai-smart-chatbot-ask-anything/id1665348245" class="project-link">View</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>SnapSwipe Photos Cleaner</h3>
+                        <p>iOS application</p>
+                        <p class="project-skills">SwiftUI • Swift</p>
+                        <a href="https://apps.apple.com/us/app/snapswipe-photos-cleaner/id6505127485" class="project-link">View</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>LetsDonate</h3>
+                        <p>Flutter application</p>
+                        <p class="project-skills">Flutter • Dart</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.samaritantechnologies.LetsDonate&hl=en_US" class="project-link">View</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Razzaq Property Management</h3>
+                        <p>iOS application</p>
+                        <p class="project-skills">UIKit • Swift</p>
+                        <a href="https://apps.apple.com/pk/app/razzaq-property-management/id1616190613" class="project-link">View</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>WatchMQTT</h3>
+                        <p>Apple Watch application</p>
+                        <p class="project-skills">SwiftUI • WatchOS</p>
+                        <a href="https://drive.google.com/file/d/1oSbbmrbZ0yQl0AfCI9of3OTukIZVI_sE/view?usp=sharing" class="project-link">View Demo</a>
+                    </div>
                 </div>
-                <div id="" class="menu-itm col-md-3 border-light text-light">
-                    <img src="media/monitor.png" alt="Softwares and Tools" class="img-fluid">
+            </section>
+            
+            <section id="contact">
+                <h2>&lt;contact&gt;</h2>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:sharuk.msd6@gmail.com">sharuk.msd6@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/sharukmsd">github.com/sharukmsd</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/sharukmsd/">linkedin.com/in/sharukmsd</a></p>
                 </div>
-                
-            </div>
-        </div>
-    </body>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 Muhammad Shahrukh | <span class="terminal-cursor">_</span></p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+            
+            // Check for saved theme preference or use default
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                body.classList.add('light-mode');
+                themeToggle.textContent = 'Dark Mode';
+            } else {
+                themeToggle.textContent = 'Light Mode';
+            }
+            
+            // Toggle theme function
+            themeToggle.addEventListener('click', function() {
+                if (body.classList.contains('light-mode')) {
+                    body.classList.remove('light-mode');
+                    localStorage.setItem('theme', 'dark');
+                    themeToggle.textContent = 'Light Mode';
+                } else {
+                    body.classList.add('light-mode');
+                    localStorage.setItem('theme', 'light');
+                    themeToggle.textContent = 'Dark Mode';
+                }
+            });
+        });
+    </script>
+</body>
 </html>
 
