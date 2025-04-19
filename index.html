@@ -9,31 +9,34 @@
     <!-- Using Fira Code as primary font with 0xProto as backup -->
 </head>
 <body>
+    <div class="header-container">
+        <div class="header-content">
+            <button id="theme-toggle">Toggle Theme</button>
+            
+            <header>
+                <h1>Muhammad Shahrukh</h1>
+                <p class="subtitle">Software Engineer - iOS - Swift</p>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="mailto:sharuk.msd6@gmail.com">Email</a></li>
+                    <li><a href="https://github.com/sharukmsd">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/sharukmsd/">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
     <div class="container">
-        <button id="theme-toggle">Toggle Theme</button>
-        
-        <header>
-            <h1>MUHAMMAD SHAHRUKH</h1>
-            <p class="subtitle">Software Engineer - iOS - Swift</p>
-        </header>
-        
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-        
         <main>
             <section id="about">
-                <h2>&lt;about&gt;</h2>
+                <h2>About</h2>
                 <p>Software Engineer specializing in iOS development with Swift, focused on creating clean, efficient mobile applications. Proficient in UIKit, SwiftUI, and modern iOS architecture patterns. Also experienced with Flutter for cross-platform projects, delivering successful apps to both the App Store and Google Play.</p>
             </section>
             
             <section id="skills">
-                <h2>&lt;skills&gt;</h2>
+                <h2>Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-item">Swift</div>
                     <div class="skill-item">Objective-C</div>
@@ -51,41 +54,41 @@
             </section>
             
             <section id="projects">
-                <h2>&lt;projects&gt;</h2>
+                <h2>Projects</h2>
                 <div class="project-grid">
                     <div class="project-item">
                         <h3>Beings</h3>
-                        <p>iOS application</p>
+                        <p>AI-powered tool for recording, transcribing, and summarizing research sessions</p>
                         <p class="project-skills">SwiftUI • Swift</p>
                         <a href="https://apps.apple.com/gb/app/beings/id6587553049?uo=2" class="project-link">View</a>
                     </div>
                     <div class="project-item">
                         <h3>AI Smart Chatbot</h3>
-                        <p>iOS application</p>
+                        <p>AI writing assistant for social posts, essays, gift ideas, and general questions</p>
                         <p class="project-skills">UIKit • Storyboards • Swift</p>
                         <a href="https://apps.apple.com/pk/app/ai-smart-chatbot-ask-anything/id1665348245" class="project-link">View</a>
                     </div>
                     <div class="project-item">
                         <h3>SnapSwipe Photos Cleaner</h3>
-                        <p>iOS application</p>
+                        <p>Free photo management app for decluttering, compressing, and organizing galleries</p>
                         <p class="project-skills">SwiftUI • Swift</p>
                         <a href="https://apps.apple.com/us/app/snapswipe-photos-cleaner/id6505127485" class="project-link">View</a>
                     </div>
                     <div class="project-item">
                         <h3>LetsDonate</h3>
-                        <p>Flutter application</p>
+                        <p>Platform for discovering, creating, and managing charitable donation campaigns</p>
                         <p class="project-skills">Flutter • Dart</p>
                         <a href="https://play.google.com/store/apps/details?id=com.samaritantechnologies.LetsDonate&hl=en_US" class="project-link">View</a>
                     </div>
                     <div class="project-item">
                         <h3>Razzaq Property Management</h3>
-                        <p>iOS application</p>
+                        <p>Complete property portal for buying, selling, maintenance, and security services</p>
                         <p class="project-skills">UIKit • Swift</p>
                         <a href="https://apps.apple.com/pk/app/razzaq-property-management/id1616190613" class="project-link">View</a>
                     </div>
                     <div class="project-item">
                         <h3>WatchMQTT</h3>
-                        <p>Apple Watch application</p>
+                        <p>IoT control app for Apple Watch using MQTT protocol</p>
                         <p class="project-skills">SwiftUI • WatchOS</p>
                         <a href="https://drive.google.com/file/d/1oSbbmrbZ0yQl0AfCI9of3OTukIZVI_sE/view?usp=sharing" class="project-link">View Demo</a>
                     </div>
@@ -93,7 +96,7 @@
             </section>
             
             <section id="contact">
-                <h2>&lt;contact&gt;</h2>
+                <h2>Contact</h2>
                 <div class="contact-info">
                     <p>Email: <a href="mailto:sharuk.msd6@gmail.com">sharuk.msd6@gmail.com</a></p>
                     <p>GitHub: <a href="https://github.com/sharukmsd">github.com/sharukmsd</a></p>
@@ -103,7 +106,7 @@
         </main>
         
         <footer>
-            <p>&copy; 2023 Muhammad Shahrukh | <span class="terminal-cursor">_</span></p>
+            <p>© 2023 Muhammad Shahrukh</p>
         </footer>
     </div>
 
@@ -111,6 +114,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             const themeToggle = document.getElementById('theme-toggle');
             const body = document.body;
+            const headerContainer = document.querySelector('.header-container');
+            const header = document.querySelector('header');
             
             // Check for saved theme preference or use default
             const savedTheme = localStorage.getItem('theme');
@@ -131,6 +136,15 @@
                     body.classList.add('light-mode');
                     localStorage.setItem('theme', 'light');
                     themeToggle.textContent = 'Dark Mode';
+                }
+            });
+            
+            // Add scroll event to add shadow to header when scrolling
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    headerContainer.classList.add('scrolled');
+                } else {
+                    headerContainer.classList.remove('scrolled');
                 }
             });
         });
