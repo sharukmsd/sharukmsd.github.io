@@ -1,3 +1,25 @@
+/* Font declarations */
+@font-face {
+    font-family: '0xProto';
+    src: url('../fonts/0xProto-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '0xProto';
+    src: url('../fonts/0xProto-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '0xProto';
+    src: url('../fonts/0xProto-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* Variables for theme switching */
 :root {
     --bg-color: #121212;
@@ -27,7 +49,7 @@
 }
 
 body {
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', '0xProto', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
