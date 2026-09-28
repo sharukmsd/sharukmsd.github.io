@@ -595,3 +595,13 @@ footer {
         display: none; /* Hide theme toggle on iPads */
     }
 }
+
+.project-status.delisted {
+    background-color: rgba(142, 142, 147, 0.15);
+    color: #8e8e93;
+}
+
+.light-mode .project-status.delisted {
+    background-color: rgba(142, 142, 147, 0.2);
+    color: #6c6c70;
+}
